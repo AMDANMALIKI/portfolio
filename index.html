@@ -1,307 +1,285 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>portfolio - Almustapha Muhammed Barau</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<style type="text/css">
-		body {
-			margin: 0;
-			box-sizing: border-box; 
-		}
+<title>Bags City</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="bc.png" sizes="32x32" type="image/png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url('r.png');
+  /* min-height: 100%;
+  background-position: center;
+  background-size: cover; */
+  width: 100%;
+  height:100%;
+  /* background-image: url('img_flowers.jpg'); */
+  background-size: 100% 100%;
+  /* border: 1px solid red; */
+}
 
-		.navigation {
-			width: 100%;
-			height: 60px;
-			background-color: #000000;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			position: fixed;
-		}
+.navbar{
+	width: 1200px;
+	height: 75px;
+	margin: auto;
+}
 
-		.navigation div a {
-			margin: 0 30px;
-			color: #ffffff;
-			text-decoration: none;
-		}
+.icon{
+	width: 200px;
+	float: left;
+	height: 70px;
+}
 
-		.hero {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-			flex-direction: column;
-		}
-	
-		.hero img {
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-		}
+.logo{
+	color: orange;
+	font-size: 35px;
+	font-family: Arial;
+	padding-left: 20px;
+	float: left;
+	padding-left: 10px;
+}
 
-		section{
-			margin: 10px;
-		}
+.menu{
+	width: 400px;
+	float: left;
+	height: 70px;
+}
 
-		section div {
-			margin-bottom: 15px;
-		}
+ul{
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-		section div h1, section div p{
-			text-align: center;
-			margin: 0 0 ;
-		}
+}
 
-		.skills {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
 
-		.skills div {
-			margin: 40px 15px; 
-		}
+ul li{
+	list-style: none;
+	margin-left: 30px;
+	margin-top: 27px;
+	font-size: 14px;
+}
 
-		.skill {
-			width: 200px;
-			padding: 0 5px;
-			text-align: center;
-			background color: #f1f1f1;
-			box-shadow: 0 4px 8px 0 rgba(0.2, 255, 0.6, 0.8);
-		}
 
-		.projects {
-			display: flex;
-			flex-wrap: wrap;
-		}
+ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	transition: 0.4s ease-in-out;
+}
 
-		.project {
-			flex: 50%;
-			max-width: 100%;
-			text-align: center;
-		}
+ul li a:hover{
+	color: orange;
+}
 
-		.project p {
-			margin: 5px 10px; 
-		}
-		/* contact form*/
-		
-		.contact {
-			position: relative;
-			width: 100%;
-			margin-top: 30px;
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-start;
-		}
 
-		.contact-form {
-			position: relative;
-			background: #f9f9f9;
-			width: calc(100% - 400px);
-			padding: 60px 40px 20px
-		}
 
-		.contact-form form {
-			width: 100%;
-		}
+.content{
+	width: 1200px;
+	height: auto;
+	margin: auto;
+	color: white;
+	position: relative;
+    top: auto;
+    bottom:30px;
+}
 
-		.contact-form .row {
-			width: 100%;
-			display: flex;
-			margin: 5px 10px;
-		}
+.content.par{
+	padding-left: 20px;
+	padding-bottom: 25px;
+	font-family: Arial;
+	letter-spacing: 2.2px;
+	line-height: 25px;
+ 
+}
 
-		.contact-form .fullinput {
-			width: 100%;
-			margin: 0 30px;
-		}
+.content h1{
+	font-family: 'Times New Roman';
+	font-size: 50px;
+	padding-left: 20px;
+	margin-top:15%;
+	/* letter-spacing: 2px; */
+    /* height: -500px; */
+}
 
-		.contact-form .row input,
-		.contact-form .row textarea {
-			position: relative;
-			border:1px solid rgba(0,0,0,0.8);
-			color: #111;
-			background: transparent;
-			width: 100%;
-			padding: 10px;
-			outline: none;
-			font-size: 16px;
-			font-weight: 400;
-			margin: 10px 0;
-			resize: none;
-		}
 
-		.contact-form .row textarea {
-			height: 120px;
-		}
+.content .cn{
+	width: 160px;
+	height: 40px;
+	background: orange;
+	border:none;
+	margin-top: auto;
+	/* margin-left: 100%; */
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: .4s ease;
+}
 
-		.contact-form .row input[type='submit'] {
-			background-color: var(--primary-color);
-			color: #fff;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			border:0;
-			margin: 0;
-			font-weight: 400;
-			cursor: pointer;
-		}
 
-		.contact-info {
-			width: 350px;
-			background: #f9f9f9;
-			padding: 50px 40px 50px;
-		}
+.content .cn a{
+	text-decoration: none;
+	color: white;
+	transition: .3s ease;
+}
 
-		.contatc-info .info-box {
-			display: flex;
-			align-items: flex-start;
-			margin-bottom: 40px;
-		}
 
-		.contact-info .info-box .contatc-icon {
-			width: 20px;
-			margin-right: 40px;
-		}
+.cn:hover{
+	background-color: gray;
 
-		.contact-info .info-box .details a {
-			color: #111;
-		}
+}
 
-		
-	</style>
-</head>
 
+.content span{
+	color: orange;
+	font-size: 60px;
+}
+
+
+.form{
+	width: 250px;
+	height: 380px;
+	background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+	position: absolute;
+	top: 200px;
+	left: 870px;
+	border-radius: 10px;
+	padding: 25px;
+}
+
+.form h2{
+	width: 220px;
+	font-family: sans-serif;
+	text-align: center;
+	color: orange;
+	font-size: 22px;
+	background-color: white;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 8px;
+}
+
+
+.form input{
+	width: 240px;
+	height: 35px;
+	background: transparent;
+	border-bottom: 1px solid orange;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	font-family: sans-serif;
+
+}
+
+
+.form input:focus{
+	outline: none;
+}
+
+::placeholder{
+	color: white;
+	font-family: Arial;
+}
+
+.btnn{
+	width: 240px;
+	height: 40px;
+	background: orange;
+	border: none;
+	margin-top: 30px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	transition: 0.4s ease;
+}
+
+
+.btnn:hover{
+	background: white;
+	color: orange;	
+}
+
+.btnn a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+
+.form .link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.font .link a{
+	text-decoration: none;
+	color: orange;
+
+}
+@media screen and (max-width: 600px) {
+	.column, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+
+
+</style>
 <body>
-	<main>
-		<header class="navigation">
-			<div><a href="me.html">Dan_Maliki</a></div>
-			<div><a href="#">||</a></div>
-			<div><a href="#">WHO</a></div>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+   <div class="main">
+		<div class="topnavbar">
 			
-		</header>
-	<header class="hero">
-		<img src=IMG_0849.jpg alt="my phot">
-		<p>Almustapha Muhanned Dan_Maliki</p>
-	</header>
-	<section>
-		<div id="who">
-			<h1>WHO</h1>
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-		<div>
-			<h1>SKILLS</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			<div class="skills">
-				<div class="skill">
-					<h3>HTML</h3>
-				</div>
-				<div class="skill">
-					<h3>CSS</h3>
-				</div>
-				<div class="skill">
-					<h3>JS</h3>
-				</div>
+			<div class="icon">
+			<h1 class="logo">Bags City</h1>
 			</div>
-		</div>
 
-		<div>
-			<h1>PROJECT</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			<div class="projects">
-				<div class="project">
-					<h3>Project 1 | Info</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="project">
-					<h3>Project 2 | Info</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="project">
-					<h3>Project 3 | Info</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="project">
-					<h3>Project 4 | Info</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="project">
-					<h3>Project 5 | Info</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<br>
-					<br>
-					<br>
-		<footer>
-			<div class="contact">
-				<div class="contact-form">
-					<form>
-						<div class="row">
-							<div class="fullinput">
-								<input type="text"	placeholder="Name">
-							</div>
-						</div>
-						<div class="row">
-							<div class="fullinput">
-								<input type="email"	placeholder="Email">
-							</div>
-						</div>
-						<div class="row">
-							<div class="fullinput">
-								<textarea placeholder="message"></textarea>
-							</div>
-						</div>
-						<div class="row">
-							<div class="fullinput">
-								<input type="submit"	placeholder="Send">
-							</div>
-						</div>
-										
-					</form>
-				</div>	
-				<div class="contact-info">
-					<div class="info-box">
-						<img src="images/address.png" class="contact-icon" alt>
-						<div class="details">
-							<h4>Address</h4>
-							<p>45 Rimi Drive, Kaduna</p>
-						</div>
-					</div>			
-					<div class="info-box">
-						<img src="images/email.png" class="contact-icon" alt>
-						<div class="details">
-							<h4>Email</h4>
-							<a href="amuhammedbarau3@gmail.com">45 Rimi Drive, Kaduna</a>
-						</div>
-					</div>
-					<div class="info-box">
-						<img src="images/call.png" class="contact-icon" alt>
-						<div class="details">
-							<h4>Phone</h4>
-							<a href="tel:+2349067178029">+234 90671 78029</a>
-						</div>
-					</div>
-				</div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="About us.html">ABOUT</a></li>
+					<li><a href="Shop.html">SHOP</a></li>
+					<li><a href="Contact.html">CONTACT</a></li>
+				</ul>
 			</div>
-		</footer>
-	</section>
-	</main>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <br>
+        <div class="container">
+            <div class="content">
+                <h1>DESIGNER<br><span>BAGS</span> <br>luxury Bags</h1>
+                <p class="p">We stand behind Bags City Brand Products with <br>a Lifetime Warranty against defects in materials <br>and workmanship.Our products are awesome,<br> and 10k+ reviews show that you don't have<br> to just take our word for it!
+                <br>Valentine's Day Gift Guide<br>Find memorable gifts for the ones you love, <br>including yourselfBags City got you<br> covered all through, Bags City <br>will help you get a package <br> of your budget without stress</p>
+                
+                <button class="cn"><a href="Shop.html">DESIGNER BAGS</a></button>
+               
+    
+            </div>
+        </div>
+  
+    
+            
+    </div>
+
+
 </body>
+
+<!-- Mirrored from www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_coming_soon&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2020 01:33:48 GMT -->
 </html>
