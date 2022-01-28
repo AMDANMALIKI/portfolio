@@ -1,285 +1,282 @@
 <!DOCTYPE html>
 <html>
-<title>Bags City</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="bc.png" sizes="32x32" type="image/png">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url('r.png');
-  /* min-height: 100%;
-  background-position: center;
-  background-size: cover; */
-  width: 100%;
-  height:100%;
-  /* background-image: url('img_flowers.jpg'); */
-  background-size: 100% 100%;
-  /* border: 1px solid red; */
-}
+	<title>Bags City</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="bc.png" sizes="32x32" type="image/png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<style>
+		body {font-family: "Raleway", sans-serif}
+		body, html {height: 100%}
+		.bgimg {
+		background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url('r.png');
+		/* min-height: 100%;
+		background-position: center;
+		background-size: cover; */
+		width: 100%;
+		height:100%;
+		/* background-image: url('img_flowers.jpg'); */
+		background-size: 100% 100%;
+		/* border: 1px solid red; */
+		}
 
-.navbar{
-	width: 1200px;
-	height: 75px;
-	margin: auto;
-}
+		.navbar{
+			width:auto;
+			height:auto;
+			margin: auto;
+		}
 
-.icon{
-	width: 200px;
-	float: left;
-	height: 70px;
-}
+		.icon{
+			width: 200px;
+			float: left;
+			height: 70px;
+		}
 
-.logo{
-	color: orange;
-	font-size: 35px;
-	font-family: Arial;
-	padding-left: 20px;
-	float: left;
-	padding-left: 10px;
-}
+		.logo{
+			color: orange;
+			font-size: 35px;
+			font-family: Arial;
+			padding-left: 20px;
+			float: left;
+			padding-left: 10px;
+		}
 
-.menu{
-	width: 400px;
-	float: left;
-	height: 70px;
-}
+		.menu{
+			width: 400px;
+			float: left;
+			height: 70px;
+		}
 
-ul{
-	float: left;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+		ul{
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-}
-
-
-ul li{
-	list-style: none;
-	margin-left: 30px;
-	margin-top: 27px;
-	font-size: 14px;
-}
+		}
 
 
-ul li a{
-	text-decoration: none;
-	color: white;
-	font-family: Arial;
-	font-weight: bold;
-	transition: 0.4s ease-in-out;
-}
-
-ul li a:hover{
-	color: orange;
-}
+		ul li{
+			list-style: none;
+			margin-left: 30px;
+			margin-top: 27px;
+			font-size: 14px;
+		}
 
 
+		ul li a{
+			text-decoration: none;
+			color: white;
+			font-family: Arial;
+			font-weight: bold;
+			transition: 0.4s ease-in-out;
+		}
 
-.content{
-	width: 1200px;
-	height: auto;
-	margin: auto;
-	color: white;
-	position: relative;
-    top: auto;
-    bottom:30px;
-}
-
-.content.par{
-	padding-left: 20px;
-	padding-bottom: 25px;
-	font-family: Arial;
-	letter-spacing: 2.2px;
-	line-height: 25px;
- 
-}
-
-.content h1{
-	font-family: 'Times New Roman';
-	font-size: 50px;
-	padding-left: 20px;
-	margin-top:15%;
-	/* letter-spacing: 2px; */
-    /* height: -500px; */
-}
+		ul li a:hover{
+			color: orange;
+		}
 
 
-.content .cn{
-	width: 160px;
-	height: 40px;
-	background: orange;
-	border:none;
-	margin-top: auto;
-	/* margin-left: 100%; */
-	font-size: 18px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: .4s ease;
-}
+
+		.content{
+			/* height: auto;
+			margin: auto; */
+			color: white;
+			position: relative;
+			top: 30px;
+			bottom:30px;
+		}
+
+		.content.par{
+			padding-left: 20px;
+			padding-bottom: 25px;
+			font-family: Arial;
+			letter-spacing: 2.2px;
+			line-height: 25px;
+		
+		}
+
+		.content h1{
+			font-family: 'Times New Roman';
+			font-size: 50px;
+			padding-left: 20px;
+			margin-top:15%;
+			/* letter-spacing: 2px; */
+			/* height: -500px; */
+		}
 
 
-.content .cn a{
-	text-decoration: none;
-	color: white;
-	transition: .3s ease;
-}
+		.content .cn{
+			width: 160px;
+			height: 40px;
+			background: orange;
+			border:none;
+			margin-top: auto;
+			/* margin-left: 100%; */
+			font-size: 18px;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: .4s ease;
+		}
 
 
-.cn:hover{
-	background-color: gray;
-
-}
-
-
-.content span{
-	color: orange;
-	font-size: 60px;
-}
+		.content .cn a{
+			text-decoration: none;
+			color: white;
+			transition: .3s ease;
+		}
 
 
-.form{
-	width: 250px;
-	height: 380px;
-	background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
-	position: absolute;
-	top: 200px;
-	left: 870px;
-	border-radius: 10px;
-	padding: 25px;
-}
+		.cn:hover{
+			background-color: gray;
 
-.form h2{
-	width: 220px;
-	font-family: sans-serif;
-	text-align: center;
-	color: orange;
-	font-size: 22px;
-	background-color: white;
-	border-radius: 10px;
-	margin: 2px;
-	padding: 8px;
-}
+		}
 
 
-.form input{
-	width: 240px;
-	height: 35px;
-	background: transparent;
-	border-bottom: 1px solid orange;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	color: white;
-	font-size: 15px;
-	letter-spacing: 1px;
-	margin-top: 30px;
-	font-family: sans-serif;
-
-}
+		.content span{
+			color: orange;
+			font-size: 60px;
+		}
 
 
-.form input:focus{
-	outline: none;
-}
+		.form{
+			width: 250px;
+			height: 380px;
+			background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+			position: absolute;
+			top: 200px;
+			left: 870px;
+			border-radius: 10px;
+			padding: 25px;
+		}
 
-::placeholder{
-	color: white;
-	font-family: Arial;
-}
-
-.btnn{
-	width: 240px;
-	height: 40px;
-	background: orange;
-	border: none;
-	margin-top: 30px;
-	font-size: 18px;
-	border-radius: 10px;
-	cursor: pointer;
-	color: white;
-	transition: 0.4s ease;
-}
-
-
-.btnn:hover{
-	background: white;
-	color: orange;	
-}
-
-.btnn a{
-	text-decoration: none;
-	color: black;
-	font-weight: bold;
-}
+		.form h2{
+			width: 220px;
+			font-family: sans-serif;
+			text-align: center;
+			color: orange;
+			font-size: 22px;
+			background-color: white;
+			border-radius: 10px;
+			margin: 2px;
+			padding: 8px;
+		}
 
 
-.form .link{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 17px;
-	padding-top: 20px;
-	text-align: center;
-}
+		.form input{
+			width: 240px;
+			height: 35px;
+			background: transparent;
+			border-bottom: 1px solid orange;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			color: white;
+			font-size: 15px;
+			letter-spacing: 1px;
+			margin-top: 30px;
+			font-family: sans-serif;
 
-.font .link a{
-	text-decoration: none;
-	color: orange;
-
-}
-@media screen and (max-width: 600px) {
-	.column, input[type=submit] {
-	  width: 100%;
-	  margin-top: 0;
-	}
-  }
+		}
 
 
-</style>
-<body>
+		.form input:focus{
+			outline: none;
+		}
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-   <div class="main">
-		<div class="topnavbar">
-			
-			<div class="icon">
-			<h1 class="logo">Bags City</h1>
+		::placeholder{
+			color: white;
+			font-family: Arial;
+		}
+
+		.btnn{
+			width: 240px;
+			height: 40px;
+			background: orange;
+			border: none;
+			margin-top: 30px;
+			font-size: 18px;
+			border-radius: 10px;
+			cursor: pointer;
+			color: white;
+			transition: 0.4s ease;
+		}
+
+
+		.btnn:hover{
+			background: white;
+			color: orange;	
+		}
+
+		.btnn a{
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+
+
+		.form .link{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 17px;
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		.font .link a{
+			text-decoration: none;
+			color: orange;
+
+		}
+		@media screen and (max-width: 600px) {
+			.column, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+			}
+		} 
+
+
+	</style>
+	<body>
+
+	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+	<div class="w3-display-topleft w3-padding-large w3-xlarge">
+	<div class="main">
+			<div class="topnavbar">
+				
+				<div class="icon">
+				<h1 class="logo">Bags City</h1>
+				</div>
+
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="About us.html">ABOUT</a></li>
+						<li><a href="Shop.html">SHOP</a></li>
+						<li><a href="Contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+	</div>
+
+	<div class="row">
+		<div class="column">
+		<div class="card">
+			<br>
+			<div class="container">
+				<div class="content">
+					<h1>DESIGNER<br><span>BAGS</span> <br>luxury Bags</h1>
+					<p class="p">We stand behind Bags City Brand Products with <br>a Lifetime Warranty against defects in materials <br>and workmanship.Our products are awesome,<br> and 10k+ reviews show that you don't have<br> to just take our word for it!
+					</p>
+					
+					<button class="cn"><a href="Shop.html">DESIGNER BAGS</a></button>
+				
+		
+				</div>
 			</div>
-
-			<div class="menu">
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="About us.html">ABOUT</a></li>
-					<li><a href="Shop.html">SHOP</a></li>
-					<li><a href="Contact.html">CONTACT</a></li>
-				</ul>
-			</div>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <br>
-        <div class="container">
-            <div class="content">
-                <h1>DESIGNER<br><span>BAGS</span> <br>luxury Bags</h1>
-                <p class="p">We stand behind Bags City Brand Products with <br>a Lifetime Warranty against defects in materials <br>and workmanship.Our products are awesome,<br> and 10k+ reviews show that you don't have<br> to just take our word for it!
-                <br>Valentine's Day Gift Guide<br>Find memorable gifts for the ones you love, <br>including yourselfBags City got you<br> covered all through, Bags City <br>will help you get a package <br> of your budget without stress</p>
-                
-                <button class="cn"><a href="Shop.html">DESIGNER BAGS</a></button>
-               
-    
-            </div>
-        </div>
-  
-    
-            
-    </div>
+	
+		
+				
+		</div>
 
 
-</body>
-
-<!-- Mirrored from www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_coming_soon&stacked=h by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2020 01:33:48 GMT -->
+	</body>
 </html>
